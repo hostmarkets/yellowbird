@@ -1705,7 +1705,7 @@ select:focus {
     display: inline-block;
 }
 
-.header-left .logo a img {
+.logo a img {
     width: auto;
     height: 65px;
 }
