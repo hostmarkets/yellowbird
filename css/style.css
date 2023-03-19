@@ -2275,7 +2275,7 @@ select:focus {
     min-width: 250px;
 }
 
-.outer-search-box-style1 .search-box .form-group input[type="search"] {
+.outer-search-box-style1 .search-box .form-group input[type="text"] {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #1f1f23;
     color: #000;
