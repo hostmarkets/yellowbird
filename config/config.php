@@ -120,13 +120,13 @@ if (serverName == "localhost") {
 
 	// ** Database settings - You can get this info from your web host ** //
 	/** The name of the database */
-	define('DB_NAME', 'yellow_bird');
+	define('DB_NAME', 'satyeccg_yellowbird');
 
 	/** Database username */
-	define('DB_USER', 'root');
+	define('DB_USER', 'satyeccg_yellowbird');
 
 	/** Database password */
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', 'ckjf@tYR^P4,');
 
 	/** Database hostname */
 	define('DB_HOST', 'localhost');
