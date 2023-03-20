@@ -45,6 +45,14 @@
 
             <h4 class="h4 nav-link mb-0"><span>Settings</span></h4>
             <li class="nav-item">
+                <a class="nav-link <?php if ($page == 'banner') {
+                    echo 'active';
+                } ?>" href="banners.php">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                    Banners
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link <?php if ($page == 'category') {
                     echo 'active';
                 } ?>" href="categories.php">

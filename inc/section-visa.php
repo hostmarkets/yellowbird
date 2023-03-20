@@ -2,7 +2,7 @@
 <section class="visa-area">
     <div class="container">
         <div class="sec-title text-center">
-            <h3>CHOOSE YOUR Catogary VISA</h3>
+            <h3>CHOOSE YOUR VISA</h3>
             <h2>With Migrate Immigration Visa<br> <span>Service We Provide.</span></h2>
         </div>
         <div class="row">

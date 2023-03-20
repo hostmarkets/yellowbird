@@ -125,13 +125,12 @@
                             <div class="bottom clearfix">
                                 <div class="left pull-left">
                                     <ul class="header-menu">
-                                        <li><a href="#">Help Desk<i class="fa fa-angle-double-right"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li><a href="#">Get A Free Quote<i class="fa fa-angle-double-right"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li><a href="#">Our Onlilne Classes<i class="fa fa-angle-double-right"
+
+                                        <li><a href="#">Get A Free Consultation<i class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i></a></li>
                                         <li><a href="#">Apply Now<i class="fa fa-angle-double-right"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li><a href="#">Pay Now<i class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
@@ -204,7 +203,15 @@
                                                     <li><a href="tourist-visa">Tourist Visa</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="countries">Countries</a></li>
+                                            <li class="dropdown"><a href="visa">Services</a>
+                                                <ul>
+
+                                                    <li><a href="student-visa">Student Visa</a></li>
+                                                    <li><a href="business-visa">Business Visa</a></li>
+                                                    <li><a href="job-seeker-visa">Job Seeker Visa</a></li>
+                                                    <li><a href="tourist-visa">Tourist Visa</a></li>
+                                                </ul>
+                                            </li>
 
                                             <li><a href="blog">Blog</a></li>
                                             <li><a href="news">News</a></li>
