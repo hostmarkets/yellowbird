@@ -4,7 +4,6 @@ include 'config/helper.php';
 if ($page == "" && $postId != "") {
     include 'inc/header.php';
     include 'inc/home-page-banner-slider.php';
-    include 'inc/section-coaching.php';
     include 'inc/section-visa.php';
     include 'inc/section-visa-assessment.php';
     include 'inc/section-country.php';
