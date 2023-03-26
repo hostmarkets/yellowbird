@@ -26,7 +26,17 @@ if (is_array($selectPostQuery) || is_object($selectPostQuery)) {
 		$meta_description = $rowPostQuery["meta_description"];
 		$meta_keywords = $rowPostQuery["meta_keywords"];
 		$meta_index = $rowPostQuery["meta_index"];
+		if ($meta_index == "yes") {
+			$meta_index = "index";
+		} else {
+			$meta_index = "noindex";
+		}
 		$meta_follow = $rowPostQuery["meta_follow"];
+		if ($meta_follow == "yes") {
+			$meta_follow = "follow";
+		} else {
+			$meta_follow = "nofollow";
+		}
 		$post_content = $rowPostQuery["post_content"];
 		$post_img = $rowPostQuery["post_img"];
 		if (!empty($post_img)) {
