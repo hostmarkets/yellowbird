@@ -16,8 +16,8 @@
                     </div>
                     <div class="right">
                         <div class="btns-box">
-                            <a class="btn-one style2" href="#"><span class="txt">Discover More<i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i></span></a>
+                            <a class="btn-one style2" href="<?php echo ROOT; ?>/contact-us"><span class="txt">Contact
+                                    Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></span></a>
                         </div>
                     </div>
 

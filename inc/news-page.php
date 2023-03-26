@@ -6,7 +6,7 @@
                 <div class="blog-post">
                     <!--Start Single blog Style1-->
                     <?php
-                    $selectBlogQuery = $db->query("SELECT * FROM `yb_posts` WHERE `post_type`='blog' AND `post_status`='publish'");
+                    $selectBlogQuery = $db->query("SELECT * FROM `yb_posts` WHERE `post_type`='news' AND `post_status`='publish'");
                     if (is_array($selectBlogQuery) || is_object($selectBlogQuery)) {
                         foreach ($selectBlogQuery as $rowBlogQuery) {
                             $post_title = $rowBlogQuery["post_title"];
@@ -110,11 +110,11 @@
                     <!--Start single sidebar-->
                     <div class="single-sidebar wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1200ms">
                         <div class="title">
-                            <h3>Recent Post</h3>
+                            <h3>Recent News</h3>
                         </div>
                         <ul class="recent-posts">
                         <?php
-                    $selectBlogQuery = $db->query("SELECT * FROM `yb_posts` WHERE `post_type`='blog' AND `post_status`='publish' LIMIT 3");
+                    $selectBlogQuery = $db->query("SELECT * FROM `yb_posts` WHERE `post_type`='news' AND `post_status`='publish' LIMIT 3");
                     if (is_array($selectBlogQuery) || is_object($selectBlogQuery)) {
                         foreach ($selectBlogQuery as $rowBlogQuery) {
                             $post_title = $rowBlogQuery["post_title"];

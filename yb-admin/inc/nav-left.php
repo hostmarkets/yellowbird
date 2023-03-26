@@ -53,6 +53,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link <?php if ($page == 'menu') {
+                    echo 'active';
+                } ?>" href="menus.php">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                    Menus
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link <?php if ($page == 'category') {
                     echo 'active';
                 } ?>" href="categories.php">

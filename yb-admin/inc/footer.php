@@ -2,7 +2,9 @@
 <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#example').DataTable();
+        $('#example').DataTable({
+            "ordering": false
+        });
     });
 </script>
 <script>
@@ -144,6 +146,23 @@
             }
             return false;
         });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#menu_position').on('change', function () {
+            if (this.value == '2') {
+                $("#section").show();
+            }
+            else {
+                $("#section").hide();
+            }
+        });
+    });
+</script>
+<script>
+    $("#checkAl").click(function () {
+        $('input:checkbox').not(this).prop('checked', this.checked);
     });
 </script>
 </body>

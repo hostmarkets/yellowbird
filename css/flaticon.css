@@ -397,3 +397,7 @@
 .flaticon-diploma:before {
   content: "\f15a";
 }
+
+.flaticon-percentage:before {
+  content: "%";
+}

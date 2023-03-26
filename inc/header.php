@@ -72,6 +72,20 @@
             window.location.href = url + search;
         });
     </script>
+    <style>
+        .modal {
+            z-index: 999999;
+        }
+
+        .enquiry-now {
+            text-align: right;
+            position: fixed;
+            transform: rotate(270deg);
+            right: -40px;
+            top: 50%;
+            z-index: 10;
+        }
+    </style>
 
 </head>
 
@@ -79,99 +93,58 @@
     <div class="boxed_wrapper">
 
         <!-- Main header -->
-        <header class="main-header header-style-one">
-            <div class="border-top" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"></div>
+        <header class="main-header header-style-five">
+            <div class="header-top-style4">
+                <div class="container">
+                    <div class="outer-box clearfix">
+                        <div class="header-top-left-style4 pull-left">
+                            <ul>
+                                <li><span class="flaticon-location-marker"></span>1315, Devika Tower,Nehru Place, New
+                                    Delhi, Delhi 110019
+                                </li>
+                                <li><span class="flaticon-mail-2"></span><a
+                                        href="mailto:info@yellowbirdvisas.com">info@yellowbirdvisas.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-top-right-style4 pull-right">
+                            <div class="header-social-link-style4">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/395332580571639" target="_blank"><i
+                                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/yellowbirdimmigration" target="_blank"><i
+                                                class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/yellowbirdvisas" target="_blank"><i
+                                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/@ybinfo" target="_blank"><i
+                                                class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--Start header-->
-            <div class="header">
+            <div class="header-style5">
                 <div class="container">
                     <div class="outer-box clearfix">
                         <!--Start Header Left-->
-                        <div class="header-left clearfix pull-left">
+                        <div class="header-left-style5 pull-left">
                             <div class="logo">
                                 <a href="<?php echo ROOT; ?>"><img src="images/yellowbird-logo.webp"
-                                        alt="yellowbird-logo Logo"></a>
+                                        alt="Yellowbird Logo" title=""></a>
                             </div>
                         </div>
                         <!--End Header Left-->
                         <!--Start Header Right-->
-                        <div class="header-right pull-right clearfix">
-                            <div class="top">
-                                <div class="header-contact-info">
-                                    <ul>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="flaticon-worldwide thm-clr"></span>
-                                            </div>
-                                            <div class="title">
-                                                <h3>1315, Devika Tower</h3>
-                                                <p>Nehru Place, New Delhi, Delhi 110019</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="flaticon-email thm-clr"></span>
-                                            </div>
-                                            <div class="title">
-                                                <h3><a href="tel:918383969795">+91-838-396-9795</a></h3>
-                                                <p><a
-                                                        href="mailto:info@yellowbirdvisas.com">info@yellowbirdvisas.com</a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom clearfix">
-                                <div class="left pull-left">
-                                    <ul class="header-menu">
-
-                                        <li><a href="#">Get A Free Consultation<i class="fa fa-angle-double-right"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li><a href="#">Apply Now<i class="fa fa-angle-double-right"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li><a href="#">Pay Now<i class="fa fa-angle-double-right"
-                                                    aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="right pull-right">
-                                    <div class="header-social-link">
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.facebook.com/395332580571639" target="_blank"><i
-                                                        class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/yellowbirdimmigration"
-                                                    target="_blank"><i class="fa fa-instagram"
-                                                        aria-hidden="true"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.linkedin.com/company/yellowbirdvisas"
-                                                    target="_blank"><i class="fa fa-linkedin"
-                                                        aria-hidden="true"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/@ybinfo" target="_blank"><i
-                                                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Header Right-->
-                    </div>
-                </div>
-            </div>
-            <!--End header -->
-
-            <!--Start Header Bottom-->
-            <div class="header-bottom">
-                <div class="container">
-                    <div class="outer-box clearfix">
-                        <div class="header-bottom-left pull-left">
-
+                        <div class="header-right-style5 pull-right clearfix">
                             <div class="nav-outer clearfix">
                                 <!--Mobile Navigation Toggler-->
                                 <div class="mobile-nav-toggler">
@@ -182,48 +155,79 @@
                                     </div>
                                 </div>
                                 <!-- Main Menu -->
-                                <nav class="main-menu style1 navbar-expand-md navbar-light">
+                                <nav class="main-menu style5 navbar-expand-md navbar-light">
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
                                             <li <?php if ($page == '') {
                                                 echo 'class="current"';
-                                            } ?>><a
-                                                    href="<?php echo ROOT; ?>">Home</a></li>
+                                            } ?>><a       href="<?php echo ROOT; ?>">Home</a></li>
                                             <li <?php if ($page == 'about-us') {
                                                 echo 'class="current"';
-                                            } ?>><a href="about-us">About
+                                            } ?>><a       href="<?php echo ROOT; ?>/about-us">About
                                                     Us</a></li>
-
-                                            <li class="dropdown"><a href="visa">Visa</a>
+                                            <li class="dropdown <?php if ($page == 'countries') {
+                                                echo 'current';
+                                            } ?>"><a href="<?php echo ROOT; ?>/countries">Countries</a>
                                                 <ul>
 
-                                                    <li><a href="student-visa">Student Visa</a></li>
-                                                    <li><a href="business-visa">Business Visa</a></li>
-                                                    <li><a href="job-seeker-visa">Job Seeker Visa</a></li>
-                                                    <li><a href="tourist-visa">Tourist Visa</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/canada">Canada</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/australia">Australia</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/uk">UK</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/europe">Europe</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/singapore">Singapore</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/uae">UAE</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/new-zealand">New Zealand</a></li>
+
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="visa">Services</a>
+                                            <li class="dropdown <?php if ($page == 'visa') {
+                                                echo 'current';
+                                            } ?>"><a href="visa">Visa</a>
                                                 <ul>
 
-                                                    <li><a href="student-visa">Student Visa</a></li>
-                                                    <li><a href="business-visa">Business Visa</a></li>
-                                                    <li><a href="job-seeker-visa">Job Seeker Visa</a></li>
-                                                    <li><a href="tourist-visa">Tourist Visa</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/pr-visa">PR Visa</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/student-visa">Student Visa</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/tourist-visit-visa">Tourist / Visit
+                                                            Visa</a></li>
+                                                    <li><a href="<?php echo ROOT; ?>/job-seeker-visa">Job Seeker
+                                                            Visa</a>
+                                                    </li>
+                                                    <li><a href="<?php echo ROOT; ?>/spouse-visa">Spouse Visa</a></li>
+
                                                 </ul>
                                             </li>
 
-                                            <li><a href="blog">Blog</a></li>
-                                            <li><a href="news">News</a></li>
-                                            <li><a href="contact-us">Contact Us</a></li>
+                                            <li class="dropdown <?php if ($page == 'services') {
+                                                echo 'current';
+                                            } ?>"><a href="visa">Services</a>
+                                                <ul>
+
+                                                    <li><a href="<?php echo ROOT; ?>/ielts">IELTS</a></li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li <?php if ($page == 'blog') {
+                                                echo 'class="current"';
+                                            } ?>><a       href="<?php echo ROOT; ?>/blog">Blog</a></li>
+                                            <li <?php if ($page == 'news') {
+                                                echo 'class="current"';
+                                            } ?>><a href="<?php echo ROOT; ?>/news">News</a></li>
+                                            <li <?php if ($page == 'contact-us') {
+                                                echo 'class="current"';
+                                            } ?>><a href="<?php echo ROOT; ?>/contact-us">Contact Us</a></li>
+
                                         </ul>
                                     </div>
                                 </nav>
                                 <!-- Main Menu End-->
                             </div>
 
-                        </div>
-                        <div class="header-bottom-right clearfix pull-right">
+                            <div class="btns-box">
+                                <a class="btn-one style2" href="#"><span class="txt">Apply Now<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></span></a>
+                            </div>
+
                             <div class="outer-search-box-style1">
                                 <div class="seach-toggle"><i class="fa fa-search"></i></div>
                                 <ul class="search-box">
@@ -240,11 +244,22 @@
                                 </ul>
                             </div>
 
+                            <div class="any-questions-box style3">
+                                <div class="icon">
+                                    <span class="flaticon-speech-bubble"></span>
+                                </div>
+                                <div class="title">
+                                    <h4>Have any Questions?</h4>
+                                    <a href="tel:918383969795">+91-838-396-9795</a>
+                                </div>
+                            </div>
+
                         </div>
+                        <!--End Header Right-->
                     </div>
                 </div>
             </div>
-            <!--End Header Bottom-->
+            <!--End header -->
 
             <!--Sticky Header-->
             <div class="sticky-header">
@@ -252,8 +267,8 @@
                     <div class="clearfix">
                         <!--Logo-->
                         <div class="logo float-left">
-                            <a href="index.html" class="img-responsive"><img src="images/yellowbird-logo.webp"
-                                    alt="yellowbird-logo" title="yellowbird-logo"></a>
+                            <a href="<?php echo ROOT; ?>" class="img-responsive"><img src="images/yellowbird-logo.webp"
+                                    alt="yellowbird-logo"></a>
                         </div>
                         <!--Right Col-->
                         <div class="right-col float-right">
@@ -266,30 +281,42 @@
                 </div>
             </div>
             <!--End Sticky Header-->
-
             <!-- Mobile Menu  -->
             <div class="mobile-menu">
                 <div class="menu-backdrop"></div>
                 <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
                 <nav class="menu-box">
-                    <div class="nav-logo"><a href="index.html"><img src="images/yellowbird-logo.webp"
-                                alt="yellowbird-logo"></a>
-                    </div>
+                    <div class="nav-logo"><a href="<?php echo ROOT; ?>"><img src="images/yellowbird-logo.webp"
+                                alt="yellowbird-logo"></a></div>
                     <div class="menu-outer">
                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                     </div>
                     <!--Social Links-->
                     <div class="social-links">
                         <ul class="clearfix">
-                            <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
+                            <li><a href="https://www.facebook.com/395332580571639" target="_blank"><span
+                                        class="fab fa fa-facebook-square"></span></a></li>
+                            <li><a href="https://www.instagram.com/yellowbirdimmigration" target="_blank"><span
+                                        class="fab fa fa-instagram"></span></a></li>
+                            <li><a href="https://www.linkedin.com/company/yellowbirdvisas" target="_blank"><span
+                                        class="fab fa fa-linkedin-square"></span></a></li>
+                            <li><a href="https://www.youtube.com/@ybinfo" target="_blank"><span
+                                        class="fab fa fa-youtube-play"></span></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <!-- End Mobile Menu -->
         </header>
+        <section class="alert-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php if (!empty($_SESSION['alert'])) {
+                            echo $_SESSION['alert'];
+                        } ?>
+                    </div>
+                </div>
+            </div>
+        </section>

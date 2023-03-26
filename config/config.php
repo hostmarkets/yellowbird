@@ -27,17 +27,11 @@ date_default_timezone_set('Asia/Kolkata');
 
 /** No timeout */
 set_time_limit(0);
-$Getip = getenv('HTTP_CLIENT_IP') ?:
-	getenv('HTTP_X_FORWARDED_FOR') ?:
-	getenv('HTTP_X_FORWARDED') ?:
-	getenv('HTTP_FORWARDED_FOR') ?:
-	getenv('HTTP_FORWARDED') ?:
-	getenv('REMOTE_ADDR');
-$Getip = explode(",", $Getip);
-$Getip = $Getip[0];
-$utm_source = isset($_GET["utm_source"]) ? $_GET["utm_source"] : "";
-$utm_medium = isset($_GET["utm_medium"]) ? $_GET["utm_medium"] : "";
-$utm_campaign = isset($_GET["utm_campaign"]) ? $_GET["utm_campaign"] : "";
+
+$utmSource = isset($_GET["utm_source"]) ? $_GET["utm_source"] : "";
+$utmMedium = isset($_GET["utm_medium"]) ? $_GET["utm_medium"] : "";
+$utmCampaign = isset($_GET["utm_campaign"]) ? $_GET["utm_campaign"] : "";
+$gclid = isset($_GET["gclid"]) ? $_GET["gclid"] : "";
 define('serverName', $_SERVER['SERVER_NAME']);
 define('host', $_SERVER['HTTP_HOST']);
 if (serverName == "localhost") {
@@ -46,7 +40,7 @@ if (serverName == "localhost") {
 	$REQUEST_URI = str_replace("/" . $proFold, "", $REQUEST_URI);
 
 	/** define */
-	define('ROOT', serverName . '/' . $proFold);
+	define('ROOT', 'http://' . serverName . '/' . $proFold);
 	define('AdminRoot', ROOT . '/yb-admin');
 	define("canonical", $REQUEST_URI);
 

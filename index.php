@@ -9,7 +9,7 @@ if ($page == "" && $postId != "") {
     include 'inc/section-country.php';
     include 'inc/section-why-choose.php';
     include 'inc/section-slogan.php';
-    include 'inc/section-blog.php';
+    include 'inc/section-news.php';
     include 'inc/footer.php';
 } elseif ($page != "" && $postId != "") {
     include 'inc/header.php';

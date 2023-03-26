@@ -132,6 +132,13 @@ function getUserIP()
 }
 $user_ip = getUserIP();
 
+/** mobile number validation */
+function validate_mobile($mobile)
+{
+	// return preg_match('/^[0-9]{10}+$/', $mobile);
+	return preg_match('/^[6-9]\d{9}$/', $mobile);
+}
+
 
 
 /**

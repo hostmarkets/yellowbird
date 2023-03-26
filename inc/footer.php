@@ -10,9 +10,11 @@
                         <p>Subscribe now to stay connected. We respect your privacy.</p>
                     </div>
                     <div class="subscribe-box">
-                        <form class="subscribe-form black_ver" action="#">
+                        <form class="subscribe-form black_ver" action="form-action.php" method="post">
                             <input type="email" name="email" placeholder="Email Address......">
                             <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            <input type="hidden" name="subscribe">
+                            <input type="hidden" name="urlAddress" value="<?php echo $REQUEST_URI; ?>">
                         </form>
                     </div>
                 </div>
@@ -66,13 +68,13 @@
                             <h3>Countries</h3>
                         </div>
                         <ul class="countries-links">
-                            <li><a href="#">Canada</a></li>
-                            <li><a href="#">United States</a></li>
-                            <li><a href="#">United Kingdom</a></li>
-                            <li><a href="#">Australia</a></li>
-                            <li><a href="#">New Zealand</a></li>
-                            <li><a href="#">Singapore</a></li>
-                            <li><a href="#">South Africa</a></li>
+                            <li><a href="<?php echo ROOT; ?>/canada">Canada</a></li>
+                            <li><a href="<?php echo ROOT; ?>/australia">Australia</a></li>
+                            <li><a href="<?php echo ROOT; ?>/uk">UK</a></li>
+                            <li><a href="<?php echo ROOT; ?>/europe">Europe</a></li>
+                            <li><a href="<?php echo ROOT; ?>/singapore">Singapore</a></li>
+                            <li><a href="<?php echo ROOT; ?>/uae">UAE</a></li>
+                            <li><a href="<?php echo ROOT; ?>/new-zealand">New Zealand</a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,13 +86,13 @@
                             <h3>Visas Types</h3>
                         </div>
                         <ul class="visa-type-links">
-                            <li><a href="#">Students Visa</a></li>
-                            <li><a href="#">Business Visa</a></li>
-                            <li><a href="#">Family Visa</a></li>
-                            <li><a href="#">Travel Visa</a></li>
-                            <li><a href="#">Work Visa</a></li>
-                            <li><a href="#">Visitor Visa</a></li>
-                            <li><a href="#">Migrate Visa</a></li>
+
+                            <li><a href="<?php echo ROOT; ?>/pr-visa">PR Visa</a></li>
+                            <li><a href="<?php echo ROOT; ?>/student-visa">Student Visa</a></li>
+                            <li><a href="<?php echo ROOT; ?>/tourist-visit-visa">Tourist / Visit Visa</a></li>
+                            <li><a href="<?php echo ROOT; ?>/job-seeker-visa">Job Seeker Visa</a></li>
+                            <li><a href="<?php echo ROOT; ?>/spouse-visa">Spouse Visa</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -147,12 +149,12 @@
         <div class="container">
             <div class="outer-box">
                 <div class="copyright-text">
-                    <p><a href="#">Yellowbird</a> &copy; 2023 All Right Reserved</p>
+                    <p><a href="<?php echo ROOT; ?>">Yellowbird</a> &copy; 2023 All Right Reserved</p>
                 </div>
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="<?php echo ROOT; ?>/about-us">About Us</a></li>
+                        <li><a href="<?php echo ROOT; ?>/privacy-policy">Privacy policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,7 +164,94 @@
 </footer>
 <!--End footer area-->
 
+<div class="enquiry-now">
+    <button data-toggle="modal" data-target="#enquiryNowModal" class="btn btn-primary"
+        style="border-top-left-radius: 12px; border-top-right-radius: 12px;">Enquiry Now</button>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="enquiryNowModal" tabindex="-1" role="dialog" aria-labelledby="enquiryNowModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="enquiryNowModalLabel">Enquiry Now</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="apply-now-form-box">
+                    <form id="visa-form" name="visa_form" class="default-form2" action="form-action.php" method="post">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="form_name" value="" placeholder="Name"
+                                        required="">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="form_country" required="">
+                                        <option value="" selected="selected">Choose Country</option>
+                                        <?php
+                                        $selectQuery = $db->query("SELECT `name` FROM `countries`");
+                                        if (is_array($selectQuery) || is_object($selectQuery)) {
+                                            foreach ($selectQuery as $key => $selectRow) {
+                                                ?>
+                                                <option value="<?php echo $selectRow['name']; ?>">
+                                                    <?php echo $selectRow['name']; ?>
+                                                </option>
+                                            <?php }
+                                        } ?>
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="form_phone" value=""
+                                        placeholder="Phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="form_email" value=""
+                                        placeholder="Email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="form_visa" required="">
+                                        <option value="" selected="selected">Choose Visa</option>
+                                        <option>PR Visa</option>
+                                        <option>Student Visa</option>
+                                        <option>Tourist / Visit Visa</option>
+                                        <option>Job Seeker Visa</option>
+                                        <option>Spouse Visa</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="button-box">
+                                    <button class="btn btn-primary btn-sm btn-block" type="submit">
+                                        <span class="txt">Enquiry Now</span>
+                                    </button>
+                                    <input type="hidden" name="EnquiryNow">
+                                    <input type="hidden" name="urlAddress" value="<?php echo $REQUEST_URI; ?>">
+                                    <input type="hidden" name="utmSource" value="<?php echo $utmSource; ?>">
+                                    <input type="hidden" name="utmMedium" value="<?php echo $utmMedium; ?>">
+                                    <input type="hidden" name="utmCampaign" value="<?php echo $utmCampaign; ?>">
+                                    <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

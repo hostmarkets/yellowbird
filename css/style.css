@@ -247,7 +247,7 @@ li {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #028fee;
+    background: #2190a5;
     content: "";
     border-radius: 8px;
     transform: scaleX(0.0) rotateX(0deg);
@@ -1707,7 +1707,7 @@ select:focus {
 
 .logo a img {
     width: auto;
-    height: 65px;
+    height: 54px;
 }
 
 
@@ -3283,7 +3283,7 @@ select:focus {
     position: absolute;
     top: -35px;
     right: 0;
-    width: 40px;
+    width: 50px;
     height: 25px;
     display: block;
     text-align: center;
@@ -7684,7 +7684,7 @@ select:focus {
 .header-top-style4 {
     position: relative;
     display: block;
-    background: #0098ff;
+    background: rgba(3, 31, 77, 0.95);
     padding: 5px 0;
 }
 
@@ -7724,7 +7724,7 @@ select:focus {
     display: inline-block;
     float: left;
     padding-right: 10px;
-    color: #031f4b;
+    color: #fff;
     font-size: 16px;
 }
 
@@ -7812,7 +7812,7 @@ select:focus {
     display: block;
 }
 
-.header-right-style5:before {
+/* .header-right-style5:before {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -7821,7 +7821,7 @@ select:focus {
     background: #0098ff;
     content: "";
     z-index: 10;
-}
+} */
 
 .header-right-style5 .nav-outer {
     position: relative;
@@ -7857,7 +7857,7 @@ select:focus {
 
 .main-menu.style5 .navigation>li:hover>a,
 .main-menu.style5 .navigation>li.current>a {
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 .main-menu.style5 .navigation>li>a:before {
@@ -7866,7 +7866,7 @@ select:focus {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #031f4b;
+    /* background: #031f4b; */
     content: "";
     z-index: -1;
     transform: scaleX(0);
@@ -7890,12 +7890,12 @@ select:focus {
 }
 
 .header-right-style5 .btns-box a {
-    color: #031f4b;
+    color: #fff;
     font-size: 14px;
     line-height: 38px;
     padding: 0 19px;
-    border: 1px solid #031f4b;
-    background: #ffffff;
+    /* border: 1px solid #f0312f; */
+    background: #f0312f;
 }
 
 .header-right-style5 .outer-search-box-style1 {
