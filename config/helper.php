@@ -128,8 +128,8 @@ if ($page == "" && $postId != "") {
 	$og_title = "Yellowbird Immigration Services Pvt. Ltd.";
 	$og_img = $post_img;
 	$og_img_alt = $post_img_alt_text;
-	$metaIndex = "index";
-	$metaFollow = "follow";
+	$metaIndex = $meta_index;
+	$metaFollow = $meta_follow;
 } elseif ($page != "" && $postId != "") {
 	$title = $meta_title;
 	$keywords = $meta_keywords;
@@ -139,8 +139,8 @@ if ($page == "" && $postId != "") {
 	$og_title = $post_title;
 	$og_img = $post_img;
 	$og_img_alt = $post_img_alt_text;
-	$metaIndex = !empty($meta_index) ? $meta_index : "index";
-	$metaFollow = !empty($meta_follow) ? $meta_follow : "follow";
+	$metaIndex = $meta_index;
+	$metaFollow = $meta_follow;
 } elseif ($page != "" && $newsCatId != "") {
 	$title = $news_cat_meta_title;
 	$meta_desc = $news_cat_meta_descp;
@@ -150,8 +150,8 @@ if ($page == "" && $postId != "") {
 	$og_title = $title;
 	$og_img = $news_cat_img;
 	$og_img_alt = $news_cat_name;
-	$metaIndex = "index";
-	$metaFollow = "follow";
+	$metaIndex = "noindex";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $authoId != "") {
 	$title = $auto_pagetitle;
 	$meta_desc = $auto_pagemetadesc;
@@ -162,7 +162,7 @@ if ($page == "" && $postId != "") {
 	$og_img = $auto_image;
 	$og_img_alt = $autho_name;
 	$metaIndex = "noindex";
-	$metaFollow = "follow";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $tagId != "" && $page != "news") {
 	$title_head = str_replace("-", " ", $tagres2);
 	$title = "" . $title_head . " Archives";
@@ -175,7 +175,7 @@ if ($page == "" && $postId != "") {
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "Tag Featured Image";
 	$metaIndex = "noindex";
-	$metaFollow = "follow";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $page == "thank-you") {
 	$title = "Thank You | Yellowbird Immigration Services Pvt. Ltd.";
 	$keywords = "Thank You, Yellowbird Immigration Services";
@@ -186,7 +186,7 @@ if ($page == "" && $postId != "") {
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "Thank you";
 	$metaIndex = "noindex";
-	$metaFollow = "follow";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $page == "blog") {
 	$title = "Latest Blog 2023 | Yellowbird Immigration Services";
 	$meta_desc = "Get the Latest Blog 2023. Yellowbird Immigration Services";
@@ -196,8 +196,8 @@ if ($page == "" && $postId != "") {
 	$og_title = $title;
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "Blog Featured Image";
-	$metaIndex = "index";
-	$metaFollow = "follow";
+	$metaIndex = "noindex";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $page == "news") {
 	$title = "Latest News 2023 | Yellowbird Immigration Services";
 	$meta_desc = "Latest News 2023. Yellowbird Immigration Services";
@@ -207,8 +207,8 @@ if ($page == "" && $postId != "") {
 	$og_title = $title;
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "News Featured Image";
-	$metaIndex = "index";
-	$metaFollow = "follow";
+	$metaIndex = "noindex";
+	$metaFollow = "nofollow";
 } elseif ($page != "" && $page == "search") {
 	$title = $q . " | Yellowbird Immigration Search";
 	$meta_desc = $q . " Yellowbird Immigration Search";
@@ -219,7 +219,7 @@ if ($page == "" && $postId != "") {
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "Search Featured Image";
 	$metaIndex = "noindex";
-	$metaFollow = "follow";
+	$metaFollow = "nofollow";
 } else {
 	$title = "404 - Page not found | Yellowbird Immigration Services";
 	$keywords = "404, Yellowbird Immigration Services";
@@ -230,7 +230,7 @@ if ($page == "" && $postId != "") {
 	$og_img = "images/yellowbird-logo.webp";
 	$og_img_alt = "404 Featured Image";
 	$metaIndex = "noindex";
-	$metaFollow = "follow";
+	$metaFollow = "nofollow";
 }
 
 /** SEO end */
