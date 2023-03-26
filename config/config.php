@@ -108,7 +108,7 @@ if (serverName == "localhost") {
 	$REQUEST_URI = $_SERVER["REQUEST_URI"];
 
 	/** define */
-	define('ROOT', 'https://www.satyenfotech.com/yellowbird/');
+	define('ROOT', 'https://www.satyenfotech.com/yellowbird');
 	define('AdminRoot', 'https://www.satyenfotech.com/yellowbird/yb-admin');
 	define("canonical", $REQUEST_URI);
 
