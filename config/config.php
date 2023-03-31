@@ -108,8 +108,8 @@ if (serverName == "localhost") {
 	$REQUEST_URI = $_SERVER["REQUEST_URI"];
 
 	/** define */
-	define('ROOT', 'https://www.satyenfotech.com/yellowbird');
-	define('AdminRoot', 'https://www.satyenfotech.com/yellowbird/yb-admin');
+	define('ROOT', 'http://192.163.197.159/~satyeccg/yellowbird');
+	define('AdminRoot', 'http://192.163.197.159/~satyeccg/yellowbird/yb-admin');
 	define("canonical", $REQUEST_URI);
 
 	// ** Database settings - You can get this info from your web host ** //
