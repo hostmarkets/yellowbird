@@ -105,12 +105,12 @@ if (serverName == "localhost") {
 	/** get search keywords for search page */
 	$q = isset($_GET["q"]) ? $_GET["q"] : '';
 } else {
-	$proFold = '~satyeccg/yellowbird';
+	$proFold = 'yellowbird';
 	$REQUEST_URI = $_SERVER["REQUEST_URI"];
 
 	/** define */
-	define('ROOT', 'http://192.163.197.159/~satyeccg/yellowbird');
-	define('AdminRoot', 'http://192.163.197.159/~satyeccg/yellowbird/yb-admin');
+	define('ROOT', 'https://hostmarkets.github.io/yellowbird');
+	define('AdminRoot', 'https://hostmarkets.github.io/yellowbird/yb-admin');
 	define("canonical", $REQUEST_URI);
 
 	// ** Database settings - You can get this info from your web host ** //
