@@ -105,6 +105,7 @@ if (serverName == "localhost") {
 	/** get search keywords for search page */
 	$q = isset($_GET["q"]) ? $_GET["q"] : '';
 } else {
+	$proFold = '~satyeccg/yellowbird';
 	$REQUEST_URI = $_SERVER["REQUEST_URI"];
 
 	/** define */
@@ -136,6 +137,7 @@ if (serverName == "localhost") {
 
 	/** for pages */
 	$res = ltrim($REQUEST_URI, '/');
+	$res = str_replace($proFold . '/', '', $res);
 
 	/** for categories */
 	$catres = ltrim($REQUEST_URI, '/');
